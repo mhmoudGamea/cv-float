@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Nunito:wght@300;400;600&display=swap");
+* {
+	box-sizing: border-box;
+}
+:root {
+	--main-padding: 10px;
+	--main-color: #d980fa;
+}
+body {
+	margin: 0;
+	font-family: "Merriweather", serif;
+	font-family: "Nunito", sans-serif;
+}
+/*start component*/
+.custom h2 {
+	margin: 0;
+	font-size: 30px;
+	color: rgb(119, 117, 117);
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+}
+.custom i {
+	font-size: 20px;
+	margin-right: 10px;
+	color: var(--main-color);
+}
+.exp {
+	text-align: start;
+	padding: 10px 25px 0px;
+}
+.exp:not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+.exp h3 {
+	margin: 0;
+	font-variant: small-caps;
+	font-size: 21px;
+	letter-spacing: 1.5px;
+	margin-bottom: 3px;
+}
+.exp .icon {
+	color: var(--main-color);
+}
+.exp .icon i {
+	margin-right: 10px;
+}
+.exp p {
+	margin-top: 3px;
+}
+.progress h3 {
+	margin: 0px;
+	font-size: 18px;
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+}
+.progress .outer {
+	background-color: rgb(223, 223, 223);
+	border-radius: 10px;
+	height: 17px;
+	overflow: hidden;
+}
+.progress .inner {
+	text-align: end;
+	font-size: 13px;
+	background-color: var(--main-color);
+	color: rgb(236, 234, 234);
+}
+.progress:first-of-type .inner {
+	width: 90%;
+}
+.progress:nth-of-type(2) .inner {
+	width: 70%;
+}
+.progress:nth-of-type(3) .inner {
+	width: 50%;
+}
+.progress:last-of-type .inner {
+	width: 80%;
+}
+/*end component*/
+.container {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+.float {
+	height: 90%;
+}
+.float .one {
+	width: 22%;
+	float: left;
+	margin-right: 1%;
+	background-color: red;
+}
+.float > div.one {
+	background-color: #fff;
+	margin-right: 10px;
+	box-shadow: 3px 8px 7px rgb(192, 192, 192);
+}
+.float > div.one .pic {
+	height: 200px;
+	background-image: url("../img/pic0.jpg");
+	background-size: cover;
+}
+.float > div.one .information {
+	padding: var(--main-padding);
+	text-align: start;
+	font-variant: small-caps;
+}
+.float > div.one .information > div {
+	align-items: center;
+}
+.float > div.one .information > div i {
+	margin-right: 10px;
+	color: var(--main-color);
+}
+.float > div.one .information > div:not(:last-child) span {
+	font-size: 18px;
+	letter-spacing: 1.5px;
+}
+.float > div.one .skills,
+.float > div.one .languages {
+	padding: var(--main-padding);
+	padding-top: 0px;
+	text-align: start;
+}
+.float > div.one .skills h2,
+.float > div.one .languages h2 {
+	margin: 0;
+	font-size: 25px;
+	font-variant: small-caps;
+	letter-spacing: 1.5px;
+	color: rgb(119, 117, 117);
+}
+.float > div.one .skills h2 i,
+.float > div.one .languages h2 i {
+	color: var(--main-color);
+	font-size: 19px;
+	margin-right: 10px;
+}
+.content {
+	width: 77%;
+	float: left;
+}
+.content .two {
+	padding: var(--main-padding);
+	margin-bottom: 1%;
+	box-shadow: 3px 5px 7px rgb(192, 192, 192);
+}
+.content .three {
+	padding: var(--main-padding);
+	box-shadow: 3px 5px 7px rgb(192, 192, 192);
+}
+footer {
+	background-color: var(--main-color);
+	text-align: center;
+	color: #fff;
+	height: 10%;
+	box-shadow: 3px -3px 7px rgb(192, 192, 192);
+}
+footer p {
+	font-size: 20px;
+	padding-top: 6px;
+	margin: 9px 0 7px;
+}
+footer i {
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+footer i:hover {
+	transform: scale(1.3);
+}
